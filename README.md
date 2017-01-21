@@ -10,7 +10,7 @@ character (independent of case).
 That is the words 'Sneeze' and 'slacker' to be buddies because they have the same character in the 1st and 6th position.
 
 Your main funciton should identify if every input string has exactly one buddy. If so, you should print out, in the position of the string
-in the input the set of shared characters tht make the pair of words buddies (see the example below). If not, it should print out 'Not Buddies'.
+in the input the set of shared characters that make the pair of words buddies (see the example below). If not, it should print out 'Not Buddies'.
 
 Examples: 
 
