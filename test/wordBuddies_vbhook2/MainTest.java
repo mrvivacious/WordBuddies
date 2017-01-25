@@ -37,4 +37,10 @@ public class MainTest {
         String[] nullInput = {null};
         assertEquals("Not Buddies", Main.isWordBuddies(nullInput));
     }
+
+    @Test
+    public void noInput() throws Exception {
+        String[] noInput = {};
+        assertEquals("Not Buddies", Main.isWordBuddies(noInput));
+    }
 }

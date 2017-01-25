@@ -8,7 +8,7 @@ package wordBuddies_vbhook2;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print(isWordBuddies(args));
+            System.out.print(isWordBuddies(args));
     }
 
     public static String isWordBuddies(String[] args) {
@@ -65,9 +65,17 @@ public class Main {
             return "Not Buddies";
         else {
             for (int i = 0; i < substrings.length; i++) {
-                buddies += substrings[i] + " ";
+                buddies += substrings[i];
+                if( i != substrings.length-1 ) {
+                    buddies += " ";
+                }
             }
-            return buddies.substring(0, buddies.length() - 1);
+            //If absolutely nothing was passed into the program
+            if( buddies.trim().equals("") ) {
+                return "Not Buddies";
+            }
+            else
+                return buddies;
         }
     }
 }
