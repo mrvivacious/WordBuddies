@@ -16,7 +16,7 @@ public class Main {
         String buddies = "";
         boolean foundBuddy = false;
         boolean noBuddy = false;
-        int counter = 0;
+        int numberOfBuddies = 0;
 
         //initialization
         for (int i = 0; i < substrings.length; i++) {
@@ -27,14 +27,14 @@ public class Main {
             //select word to test for WordBuddies
                 for (int j = 0; j < args.length; j++) {
                     if ( i != j ) {
-                        //change this to iterate every index
+                        //iterates initial word
                         for (int k = 0; k < args[i].length(); k++) {
-                            //change this to iterate every index of test word
+                            //iterates test word
                             for (int l = 0; l < args[j].length(); l++) {
                                 if ( args[i].substring(k, k + 1).equalsIgnoreCase(args[j].substring(l, l + 1) ) &&
                                         (k == l) && foundBuddy) {
-                                    counter++;
-                                    if( counter >= 2 ) {
+                                    numberOfBuddies++;
+                                    if( numberOfBuddies >= 2 ) {
                                         return "Not Buddies";
                                     }
                                 }
@@ -52,9 +52,8 @@ public class Main {
                     else
                         substrings[i] = "";
                 }
-            //reset counter for next word
             foundBuddy = false;
-            counter = 0;
+            numberOfBuddies = 0;
         }
         //does everyone have a buddy?
         for (int i = 0; i < substrings.length; i++) {
