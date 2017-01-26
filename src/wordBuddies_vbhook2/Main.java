@@ -34,7 +34,7 @@ public class Main {
                                 if ( args[i].substring(k, k + 1).equalsIgnoreCase(args[j].substring(l, l + 1) ) &&
                                         (k == l) && foundBuddy) {
                                     counter++;
-                                    if( counter >= 2 ) {                  
+                                    if( counter >= 2 ) {
                                         return "Not Buddies";
                                     }
                                 }
