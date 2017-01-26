@@ -33,8 +33,8 @@ public class Main {
                             for (int l = 0; l < args[j].length(); l++) {
                                 if ( args[i].substring(k, k + 1).equalsIgnoreCase(args[j].substring(l, l + 1) ) &&
                                         (k == l) && foundBuddy) {
-                                    counter++;                            //"buddy" qualifies with x > 2 matches, one matching character
-                                    if( counter >= 2 ) {                  //should not be treated as a buddy and therefore not print "Not Buddies"
+                                    counter++;
+                                    if( counter >= 2 ) {                  
                                         return "Not Buddies";
                                     }
                                 }

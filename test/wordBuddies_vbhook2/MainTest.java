@@ -19,7 +19,7 @@ public class MainTest {
 
     @Test
     public void notBuddies() throws Exception {
-        String[] badInput = {"scar", "feature", "fee", "fear"};
+        String[] badInput = {"scar", "feature", "fee", "fear      "};
         assertEquals("Not Buddies", Main.isWordBuddies(badInput));
 
         String[] notGreatInput = {"scat", "that", "mouse"};
