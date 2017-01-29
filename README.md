@@ -20,4 +20,4 @@ output: ar fe fe ar
 input: scar feature fee fear
 output: Not Buddies"
 
-- CS126 spring 2017
+From CS126 spring 2017
