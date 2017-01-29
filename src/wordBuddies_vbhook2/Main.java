@@ -23,34 +23,34 @@ public class Main {
             substrings[i] = "";
         }
         //select initial word
-        for (int i = 0; i < args.length; i++) {
+        for (int initialWord = 0; initialWord < args.length; initialWord++) {
             //select word to test for WordBuddies
-                for (int j = 0; j < args.length; j++) {
-                    if ( i != j ) {
+                for (int testWord = 0; testWord < args.length; testWord++) {
+                    if ( initialWord != testWord ) {
                         //iterates initial word
-                        for (int k = 0; k < args[i].length(); k++) {
+                        for (int k = 0; k < args[ initialWord ].length(); k++) {
                             //iterates test word
-                            for (int l = 0; l < args[j].length(); l++) {
-                                if ( args[i].substring(k, k + 1).equalsIgnoreCase(args[j].substring(l, l + 1) ) &&
+                            for (int l = 0; l < args[ testWord ].length(); l++) {
+                                if ( args[ initialWord ].substring(k, k + 1).equalsIgnoreCase(args[ testWord ].substring(l, l + 1) ) &&
                                         (k == l) && foundBuddy) {
                                     numberOfBuddies++;
                                     if( numberOfBuddies >= 2 ) {
                                         return "Not Buddies";
                                     }
                                 }
-                                else if( args[i].substring(k, k + 1).equalsIgnoreCase(args[j].substring(l, l + 1)) &&
+                                else if( args[ initialWord ].substring(k, k + 1).equalsIgnoreCase(args[ testWord ].substring(l, l + 1)) &&
                                         (k == l) ) {
-                                    substrings[i] += args[i].substring(k, k + 1).toLowerCase();
+                                    substrings[ initialWord ] += args[ initialWord ].substring(k, k + 1).toLowerCase();
                                 }
-                            }
-                        }
+                            } //testWord iteration
+                        } //initialWord iteration
                     }
                     //if buddies have been found, ensure no additional words affect the substring array's items
-                    if ( !substrings[i].equals("") && substrings[i].length() >= 2 ) {
+                    if ( !substrings[ initialWord ].equals("") && substrings[ initialWord ].length() >= 2 ) {
                         foundBuddy = true;
                     }
                     else
-                        substrings[i] = "";
+                        substrings[ initialWord ] = "";
                 }
             foundBuddy = false;
             numberOfBuddies = 0;
