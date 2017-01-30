@@ -43,4 +43,10 @@ public class MainTest {
         String[] noInput = {};
         assertEquals("Not Buddies", Main.isWordBuddies(noInput));
     }
+
+    @Test
+    public void newLineTest() throws Exception {
+        String[] newLine = {"\n"};
+        assertEquals("Not Buddies", Main.isWordBuddies(newLine));
+    }
 }
