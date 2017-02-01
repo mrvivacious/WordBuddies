@@ -19,7 +19,7 @@ public class MainTest {
         assertEquals("ar fe fe ar", Main.isWordBuddies(goodInput));
 
         //Is this in the parameters? How do I solve for this situation? Works perfect without numbers
-        String[] greatInput = {"S32CAT", "tH32aT", "mOuSe", "HoUSE"};
+        String[] greatInput = {"SC32AT", "tH32aT", "mOuSe", "HoUSE"};
         assertEquals("32at 32at ouse ouse", Main.isWordBuddies(greatInput));
     }
 
