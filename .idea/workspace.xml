@@ -448,9 +448,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2017.01.29 at 22h 07m 03s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest - 2017.01.30 at 03h 07m 58s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
@@ -476,6 +473,9 @@
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MainTest - 2017.01.31 at 13h 16m 28s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2017.01.31 at 21h 25m 21s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
   </component>
