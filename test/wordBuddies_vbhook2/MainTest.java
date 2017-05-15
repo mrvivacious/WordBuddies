@@ -3,7 +3,6 @@ package wordBuddies_vbhook2;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-// ?? Add helper functions. Piazza post
 /**
  * Created by vbhook2 on 1/23/17.
  */
